@@ -3,7 +3,7 @@ import './App.css';
 function App() {
   return (
     <>
-      THis is react Project using Yarn
+      <h1 className='text-gray-900 text-2xl'>This is react Project using Yarn</h1>
     </>
   );
 }
