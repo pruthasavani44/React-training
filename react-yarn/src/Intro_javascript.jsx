@@ -34,15 +34,27 @@ export default function Intro_javascript() {
     <>
       <h2>Check the console to see the message!</h2>
 
-      <button onClick={print}>Print Hello</button>
+      <button style={{ padding: "2px 10px", margin: "5px" }} onClick={print}>
+        Print Hello
+      </button>
 
       <h2>Check the console to see the Data types!</h2>
 
-      <button onClick={string}>Micra</button>
-      <button onClick={number}>200</button>
-      <button onClick={boolean}>Boolean</button>
-      <button onClick={value}>Undefined</button>
-      <button onClick={val}>null</button>
+      <button style={{ padding: "2px 10px", margin: "5px" }} onClick={string}>
+        Micra
+      </button>
+      <button style={{ padding: "2px 10px", margin: "5px" }} onClick={number}>
+        200
+      </button>
+      <button style={{ padding: "2px 10px", margin: "5px" }} onClick={boolean}>
+        True
+      </button>
+      <button style={{ padding: "2px 10px", margin: "5px" }} onClick={value}>
+        Undefined
+      </button>
+      <button style={{ padding: "2px 10px", margin: "5px" }} onClick={val}>
+        null
+      </button>
     </>
   );
 }
