@@ -1,4 +1,5 @@
 import './App.css';
+<<<<<<< Updated upstream
 import React, { useState } from 'react';
 
 function App() {
@@ -31,12 +32,24 @@ function App() {
     setTask(UpdatedTask);
   }
 
+=======
+import React, { useState } from "react"
+
+function App() {
+
+  const [para, setPara] = useState("")
+
+  const update = () => {
+
+  }
+>>>>>>> Stashed changes
 
   return (
     <>
       <h1 className='text-gray-900 text-2xl'>This is react Project using Yarn</h1>
 
 
+<<<<<<< Updated upstream
       <textarea onChange={handleInputChange} value={inputText} rows="3" cols="30" placeholder="Enter Your Message Here..." style={{ border: "1px solid black", padding: "5px" }} />
       <br />
       <button onClick={update} style={{ border: "1px solid black", padding: "2px 10px", marginBottom: "10px" }} >Update Paragraph</button>
@@ -73,6 +86,16 @@ function App() {
         ))}
       </ul>
 
+=======
+      <textarea placeholder="Enter Your Message" rows="5" cols="30" style={{ border: "1px solid black", padding: "5px" }} ></textarea>
+
+      <br />
+      <button onChange={setPara(e.target.value)} onClick={update} style={{ border: "1px solid black", padding: "5px" }} >Update Paragraph</button>
+
+      <p>Updated Paragraph : hello</p>
+
+
+>>>>>>> Stashed changes
     </>
   );
 }
