@@ -1,10 +1,18 @@
 import './App.css';
+import { NoteData } from './hooks/contextAPI/noteContext';
+import { ThemeProvider } from './hooks/contextAPI/ThemeContext';
+// import Form from './pages/Form';
+import Index from './pages/Index';
+import MyForm from './pages/myForm';
 
 function App() {
   return (
-    <>
-      <h1 className='text-gray-900 text-2xl'>This is react Project using Yarn</h1>
-    </>
+    <ThemeProvider>
+      <NoteData>
+        <Index />
+        <MyForm/>
+      </NoteData>
+    </ThemeProvider>
   );
 }
 
