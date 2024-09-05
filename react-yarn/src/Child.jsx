@@ -2,6 +2,7 @@ import React from "react";
 
 function Child(props) {
   const { increment } = props;
+
   return (
     <>
       {console.log("Render From Child")}
@@ -13,4 +14,5 @@ function Child(props) {
     </>
   );
 }
+
 export default React.memo(Child);
